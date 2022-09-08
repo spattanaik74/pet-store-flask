@@ -6,9 +6,14 @@ class PetRepository:
         self.session = session
 
     def get_all(self):
+        """
+        It returns a list of dictionaries, where each dictionary is a pet
+        :return: A list of dictionaries.
+        """
         return [pets.dict() for pets in self.session.query(PetModel).all()]
 
     def get_all_by_id(self, id):
+        # noqa: E501
         return [pets.dict() for pets in self.session.query(PetModel).filter_by(id=id).all()]
 
     def get_all_by_status(self, status):

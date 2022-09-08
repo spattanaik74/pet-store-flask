@@ -24,5 +24,12 @@ reposiory.delete();
 
 view/controller layer -> business logic/service layer -> db/repository/data layer
 
+Next Steps:
 
-
+DevOps
+-------
+-> build(for compiled languages) or Lint (for scripting languages)  flake8/pylint (OK)
+-> Test (OK)
+-> Package Container(Docker build) (OK) 
+-> Deploy(Docker deploy) (OK)
+-> Deploy with all dependencies (Docker Compose) (OK)

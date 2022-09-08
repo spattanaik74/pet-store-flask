@@ -1,7 +1,6 @@
-from flask import request, jsonify
+from flask import request
 from flask import Flask
 
-from pet_store_flask.config import config
 from pet_store_flask.pet import session
 from pet_store_flask.pet import repository
 
@@ -12,7 +11,7 @@ app = Flask(__name__)
 
 @app.route("/health", methods=['GET'])
 def health():
-    return "UP"
+    return "UP200"
 
 
 @app.route("/pet/<id>", methods=['GET'])
